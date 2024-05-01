@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+:root {
+    --white: #fff;
+    --black: #000;
+}
+
+ul {
+    display: flex;
+
+}
+
+.area-1, .area-2, .area-3 {
+    visibility: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+li, a, button {
+    color: #303030;
+    font-size: 18px;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins';
+    margin: 10px;
+}
+
+li {
+    padding: 10px;
+}
+
+button {
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 1rem;
+}
+
+button:hover {
+    border: 1px solid var(--black);
+    background-color: transparent;
+    color: var(--black);
+    transition: 0.6s;
+}
+
+#sec-1 > h1 {
+    margin-top: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+#sec-1 > p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+
+
+#sec-1 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
+#codepng {
+    margin-top: 2rem;
+    width: 1000px;
+    height: 800px;
+    border-radius: 0.5rem;
+}
+
+#sec-2 {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    margin-top: 2rem;
+}
+
+#sec-2 > h1 {
+    margin-top: 100px;
+    font-size: 3rem;
+    flex-direction: column;
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.wrapper img {
+    margin-top: 100px;
+    margin-bottom: 1.8rem;
+}
+
+.wrapper p {
+    padding: 20px;
+    word-break: normal;
+}
+
+.wrapper h3 {
+    word-break: normal;
+}
+
+#sec-3 {
+    margin-left: 16rem;
+    padding: 3rem;
+}
+
+
+
+#sec-3 > p {
+    margin-top: 1rem;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+
+
