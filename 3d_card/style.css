@@ -7,13 +7,14 @@
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
   body {
     perspective: 1500px;
-    background: linear-gradient(#fff, #cccccc);
+    background: #d6d6d6;
   }
   
   .card {
@@ -79,10 +80,101 @@
 }
 
 #sec-1 {
+    height: auto;
     display: flex;
     margin-left: 100px;
+    /* border: 1px solid red; */
+    padding-top: 300px;
 }
 
+
+.sec-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  /* border: 1px solid red; pai */
+}
+
+.container-prods {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  /* border: 1px solid red; */
+}
+
+.container-prods h2 {
+  margin-bottom: 4rem;
+}
+
+.container-grid {
+  display: grid;
+  /* border: 1px solid black; */
+  grid-template-columns: repeat(3, 1fr);
+  padding-bottom: 100px;
+  gap: 20px;
+}
+
+/* navbar - end */
+
+.cards {
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px rgb(119, 119, 119);
+}
+
+.cards article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards > img {
+  object-fit: cover;
+  height: 200px;
+}
+
+.cards > .desc-h3, .comprar-btn {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+article > p {
+  text-align: center;
+  margin: 10px;
+}
+
+
+/* article > .comprar-btn {
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  border: none;
+  background-color: #ff9c2b;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  
+}
+
+
+
+.comprar-btn:hover {
+  transition: 0.8s;
+  border: 1px solid #131312;
+  background-color: #ff9c2b60;
+  cursor: pointer;
+} */
 
 /* ... Outros estilos CSS ... */
 
