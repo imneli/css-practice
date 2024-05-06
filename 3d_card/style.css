@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins';
+  }
+  
+  html, body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  body {
+    perspective: 1500px;
+    background: linear-gradient(#fff, #cccccc);
+  }
+  
+  .card {
+    font-weight: bold;
+    padding: 1em;
+    text-align: right;
+    color: #181a1a;
+    
+    width:  300px;
+    height: 400px;
+    box-shadow: 0 1px 5px #00000099;
+    
+    border-radius: 10px;
+    background-image: url(https://i.pinimg.com/564x/11/d6/87/11d6872910ca83126797f0554f7058da.jpg);
+    background-size: cover;
+    
+    position: relative;
+    
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out;
+    transform: rotate3d(0);
+  }
+  
+  .card:hover {
+    transition-duration: 150ms;
+    box-shadow: 0 5px 20px 5px #00000044;
+  }
+  
+  .card .glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    
+    background-image: radial-gradient(circle at 50% -20%, #ffffff22, #0000000f);
+  }
+
+
+  .text-princ {
+    display: flex;
+  }
+
+
+  #macarrao {
+    color:#181a1a;
+    font-size: 3rem;
+    margin-right: 100px;
+  }
+
+  h1#macarrao::after {
+    content: 'Neli Chat';
+    display: inline-block;
+    margin-right: 200px;
+    background-image: linear-gradient(90deg, rgba(255,180,48,1) 35%, rgba(255,55,0,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: 'Arial', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+#sec-1 {
+    display: flex;
+    margin-left: 100px;
+}
+
+
+/* ... Outros estilos CSS ... */
+
+
+  /* text animation - start */
+
+  
