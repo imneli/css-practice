@@ -121,6 +121,7 @@
 /* navbar - end */
 
 .cards {
+  cursor: default;
   margin: 10px;
   width: 300px;
   height: 300px;
@@ -148,12 +149,21 @@
   justify-content: center;
 }
 
+.cards:hover {
+  scale: 1.10;
+  transition: .8s;
+}
+
 article > p {
+  cursor: default;
   text-align: center;
   margin: 10px;
 }
 
-
+#faq {
+  text-transform: uppercase;
+  font-weight: bold;
+}
 /* article > .comprar-btn {
   font-size: 1rem;
   text-align: center;
