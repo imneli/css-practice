@@ -43,3 +43,67 @@ $card.addEventListener('mouseleave', () => {
   $card.style.transform = '';
   $card.style.background = '';
 });
+
+function medidas(){
+  const contador1 = document.getElementById('contador1');
+  let valor1 = 0;
+
+//setInterval, os desenvolvedores têm a capacidade de executar determinado código repetidamente em um intervalo de tempo definido
+let tempo1 = setInterval(() => {
+  valor1 += 1;
+
+  contador1.innerHTML = `${valor1}+`;
+
+  if (valor1 == 400) {
+    //limpa o intervalo de tempo
+    clearInterval(tempo1);
+  }
+});
+
+//medidor 2
+
+
+const contador2 = document.getElementById('contador2');
+  let valor2 = 0;
+
+//setInterval, os desenvolvedores têm a capacidade de executar determinado código repetidamente em um intervalo de tempo definido
+let tempo2 = setInterval(() => {
+  valor2 += 1;
+
+  contador2.innerHTML = `${valor2}+`;
+
+  if (valor2 == 150) {
+    //limpa o intervalo de tempo
+    clearInterval(tempo2);
+  }
+});
+
+
+//medidor 3
+
+
+const contador3 = document.getElementById('contador3');
+let valor3 = 0;
+
+//setInterval, os desenvolvedores têm a capacidade de executar determinado código repetidamente em um intervalo de tempo definido
+let tempo3 = setInterval(() => {
+valor3 += 1;
+
+contador3.innerHTML = `${valor3}+`;
+
+if (valor3 == 200) {
+  //limpa o intervalo de tempo
+  clearInterval(tempo3);
+}
+});
+
+}
+
+const accordions = document.querySelectorAll('.accordion');
+
+accordions.forEach(accordion => {
+    accordion.addEventListener('click', () => {
+        const body = accordion.querySelector('.accordion-body');
+        body.classList.toggle('active');
+    })
+})
