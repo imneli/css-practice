@@ -1,6 +1,13 @@
 * {
     box-sizing: border-box;
     font-family: 'Poppins';
+    margin: 0;
+    padding: 0;
+  }
+
+  :root {
+    --bg-color2: #343434;
+    --space: 2rem;
   }
   
  body {
@@ -10,6 +17,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
   }
   
   body {
@@ -60,7 +68,7 @@
 
 
   #macarrao {
-    color:#181a1a;
+    
     font-size: 3rem;
     margin-right: 100px;
   }
@@ -106,7 +114,7 @@
 }
 
 .container-prods h2 {
-  margin-bottom: 4rem;
+  margin-bottom: var(--space);
 }
 
 .container-grid {
@@ -148,6 +156,10 @@
   justify-content: center;
 }
 
+.desc-h3 {
+  margin-top: var(--space);
+}
+
 .cards:hover {
   scale: 1.10;
   transition: .8s;
@@ -160,6 +172,7 @@ article > p {
 }
 
 #faq {
+  margin-bottom: var(--space);
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -252,8 +265,75 @@ color:var(--text-color4);
   transform: rotate(180deg);
 }
 
+#page2 {
+  background-color: var(--bg-color2);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
 
+.desc-btn {
+  margin-top: var(--space);
+  max-width: 400px;
+  color: #fefefe;
+}
 
+.column {
+  flex-direction: column;
+}
+
+#letitgo {
+  margin-top: var(--space);
+  color: #fefefe;
+  justify-content: center;
+  font-size: 48px;
+  max-width: 1000px;
+}
+
+#btn-redirect {
+  margin-top: var(--space);
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+  border: none;
+  font-weight: 700;
+  background-color: #fdff88;
+}
+
+#btn-redirect:hover {
+  cursor: pointer;
+  transition: ease .5s;
+  box-shadow: 5px 10px;
+}
+
+.form-label {
+  color: #fefefe;
+}
+
+.form-control {
+  outline: none;
+}
+
+#submit-btn {
+  background-color: #d6d6d6;
+  border: none;
+  border: 2px solid transparent;
+}
+
+#submit-btn:hover {
+  cursor: pointer;
+  transition: ease .5s;
+  border: 2px solid #fff;
+  color: #fefefe;
+  background-color: transparent;
+}
+
+.starts {
+  color: #fefefe;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  font-size: 48px;
+}
 
 
 /* article > .comprar-btn {
